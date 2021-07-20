@@ -20,8 +20,8 @@ function Home(props){
                {props.commitsHistory ? props.commitsHistory.map(commit => {
                    return (
                     <div className={style.container}>
-                       <span className={style.name}>{commit.commit.author.name}</span>
-                       <span className={style.message} >{commit.commit.message}</span>
+                       <span className={style.name}>{commit.committer.login}</span>
+                       <span className={style.message}>{commit.commit.message}</span>
                    </div>
                    )
                }) 
@@ -36,7 +36,8 @@ function Home(props){
 
 const mapStateToProps = state => {
     return {
-        commitsHistory : state.commitsHistory
+        commitsHistory : state.commitsHistory,
+        commitDetails : state.commitDetails
     }
 }
 
