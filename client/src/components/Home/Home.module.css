@@ -1,0 +1,15 @@
+.container{
+    border: 1px solid rgb(131,58,180);
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.name{
+    margin-left: 10rem; 
+    font-weight: 500;  
+}
+
+.message{
+    margin-left: 20rem;
+}
